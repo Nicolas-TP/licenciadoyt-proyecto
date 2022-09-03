@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&family=Righteous&family=Staatliches&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Play;
+}
+/* -------Header-------- */
+.navbar{
+    background-color: #a137ff;
+}
+.navbar .container-fluid img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.navbar .container-fluid .navbar-brand{
+    color: black;
+    transition-duration: 1s;
+}
+.navbar .container-fluid .navbar-brand:hover{
+    transform: scale(1.025);
+    background-color: #8800ff;
+    border-radius: 10px;
+}
+.navbar .container-fluid .nav-link{
+    color: black;
+    transition-duration: 1s;
+    border-radius: 10px;
+}
+.navbar .container-fluid .navbar-nav .nav-item .nav-link:hover{
+    transform: scale(1.025);
+    background-color: #8800ff;
+    border-radius: 10px;
+}
+
+/* -------Main-------- */
+
+
+
+/* -------Footer-------- */
+footer{
+    background-color: #a137ff;
+}
