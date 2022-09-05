@@ -5,6 +5,18 @@
     font-family: Play;
     color: white;
 }
+p::selection{
+    background-color: #6204b4;
+    color: black;
+}
+h2::selection{
+    background-color: #6204b4;
+    color: black;
+}
+h5::selection{
+    background-color: #6204b4;
+    color: black;
+}
 /* -------Header-------- */
 .navbar{
     background-color: #8d2ce2;
@@ -73,34 +85,41 @@ main{
 }
 .tarjetas .canal{
     display: flex;
+    justify-content: space-between;
 }
 .tarjetas .canal .canal-1{
     display: flex;
-    justify-content: space-between;
 }
 #uno{
     margin-left: 120px;
-    margin-right: 50px;
 }
 .tarjetas .canal .canal-1 .canal-1-1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px rgba(128, 128, 128, 0.712) solid;
+    border: 2px #6204b4 solid;
     border-radius: 10px;
 }
 .tarjetas .canal .canal-1 .canal-1-1 img{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    width: 400px;
+    height: 250px;
 }
 .tarjetas .canal .canal-1 .canal-1-1 a{
     text-decoration: none;
+    align-items: center;
     color: black;
     background-color: rgba(153, 0, 145, 0.644);
     padding: 3px;
+    width: 120px;
+    height: 45px;
+    text-align: center;
+    font-size: 25px;
     border-radius: 3px;
-    margin-bottom: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     transition: 1.15s;
 }
 .tarjetas .canal .canal-1 .canal-1-1 a:hover{
@@ -164,4 +183,89 @@ footer .logo img{
 }
 footer .logo img:hover{
     transform: scale(1.05);
+}
+
+/* ------Responsive------ */
+
+@media screen and (max-width: 1100px){
+    .tarjetas .canal{
+        display: flex;
+        flex-direction: column;
+    }
+    .tarjetas .canal .canal-1{
+        padding-bottom: 30px;
+    }
+    #uno{
+        margin: 0px;
+        margin-left: 125px;
+    }
+    #dos{
+        margin: 0px;
+        margin-left: 125px;
+    }
+}
+@media screen and (max-width: 650px){
+    .tarjetas .canal .canal-1 .canal-1-1 img{
+        width: 300px;
+        height: 175px;
+    }
+    .tarjetas .canal .canal-1 .canal-1-2 p{
+        font-size: 12px;
+    }
+    .video .video-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 7px;
+        width: 400px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 550px){
+    .tarjetas .canal .canal-1 .canal-1-1 img{
+        width: 260px;
+        height: 150px;
+    }
+    .tarjetas .canal .canal-1 .canal-1-2 p{
+        font-size: 10px;
+    }
+    .tarjetas .canal .canal-1 .canal-1-1 a{
+        width: 95px;
+        height: 33px;
+        text-align: center;
+        font-size: 18px;
+    }
+    footer .redes img{
+        height: 50px;
+        width: 50px;
+    }
+    footer .logo img{
+        height: 50px;
+        width: 50px;
+    }
+}
+@media screen and (max-width: 510px){
+    .tarjetas .canal .canal-1 .canal-1-1 img{
+        width: 240px;
+        height: 142px;
+    }
+    .tarjetas .canal .canal-1 .canal-1-2 p{
+        font-size: 10px;
+        width: 120px;
+        text-align: left;
+    }
+    .tarjetas .canal .canal-1 .canal-1-1 a{
+        width: 90px;
+        height: 30px;
+        text-align: center;
+        font-size: 16px;
+    }
+    footer .redes img{
+        height: 45px;
+        width: 45px;
+    }
+    footer .logo img{
+        height: 45px;
+        width: 45px;
+    }
 }
