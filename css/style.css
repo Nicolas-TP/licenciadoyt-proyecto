@@ -222,6 +222,17 @@ footer .logo img:hover{
     }
 }
 @media screen and (max-width: 550px){
+    .tarjetas .canal .canal-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #uno{
+        margin: 0px;
+    }
+    #dos{
+        margin: 0px;
+    }
     .tarjetas .canal .canal-1 .canal-1-1 img{
         width: 260px;
         height: 150px;
@@ -267,5 +278,10 @@ footer .logo img:hover{
     footer .logo img{
         height: 45px;
         width: 45px;
+    }
+    .video .video-1{
+        margin-bottom: 6px;
+        width: 350px;
+        height: 250px;
     }
 }
